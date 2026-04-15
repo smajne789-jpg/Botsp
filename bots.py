@@ -64,13 +64,9 @@ async def deposit(call: types.CallbackQuery):
     )
 
     await call.message.answer(
-        "💳 <b>Пополнение баланса</b>
-
-"
-        "Выберите сумму или введите вручную:
-"
-        "⚡ Минимум: 0.5$
-"
+        "💳 <b>Пополнение баланса</b>"
+        "Выберите сумму или введите вручную:"
+        "⚡ Минимум: 0.5$"
         "💰 Максимум: 500$",
         parse_mode="HTML",
         reply_markup=kb
